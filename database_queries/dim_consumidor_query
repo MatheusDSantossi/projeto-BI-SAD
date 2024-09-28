@@ -1,0 +1,9 @@
+create table dim_consumidor (
+	pk_dim_consumidor serial PRIMARY KEY,
+	tipo_consumo VARCHAR(50) NOT NULL,
+	numero_consumidores INTEGER NOT NULL
+);
+
+DROP TABLE dim_consumidor;
+
+select * from dim_consumidor;

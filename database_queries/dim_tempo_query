@@ -1,0 +1,12 @@
+create table if not exists dim_tempo (
+	pk_dim_tempo serial PRIMARY KEY,
+-- 	data Date NOT NULL,
+	ano INTEGER NOT NULL,
+	semestre varchar(50) NOT NULL,
+	mes varchar(50) NOT NULL
+);
+
+drop table dim_tempo
+
+select * from dim_tempo 
+where mes = 'Fevereiro';

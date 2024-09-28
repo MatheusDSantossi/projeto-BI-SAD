@@ -1,0 +1,17 @@
+create table Fato (
+	numero_consumidores int,
+	consumo int,
+	pk_dim_tempo int,
+	pk_dim_local int,
+	pk_dim_consumidor int,
+	constraint pk_dim_tempo FOREIGN KEY (pk_dim_tempo) references dim_tempo(pk_dim_tempo),
+	constraint pk_dim_local FOREIGN KEY (pk_dim_local) references dim_local(pk_dim_local),
+	constraint pk_dim_consumidor FOREIGN KEY (pk_dim_consumidor) references dim_consumidor(pk_dim_consumidor),
+	
+	primary key(pk_dim_tempo, pk_dim_local, pk_dim_consumidor)
+);
+
+
+drop table Fato;
+
+select * from Fato;

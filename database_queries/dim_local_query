@@ -1,0 +1,11 @@
+create table dim_local (
+	pk_dim_local serial PRIMARY KEY,
+	regiao_nome VARCHAR(50),
+	regiao_sigla VARCHAR(50),
+	nome_estado VARCHAR(50),
+	sigla_uf VARCHAR(50)
+);
+
+DROP TABLE dim_local
+
+select * from dim_local;
